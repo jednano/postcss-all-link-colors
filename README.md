@@ -1,8 +1,8 @@
 # postcss-all-link-colors
 
 <img align="right" width="135" height="95"
-     title="Philosopher’s stone, logo of PostCSS"
-     src="http://postcss.github.io/postcss/logo-leftp.png">
+	title="Philosopher’s stone, logo of PostCSS"
+	src="http://postcss.github.io/postcss/logo-leftp.png">
 
 [![Build Status](https://travis-ci.org/jedmao/postcss-all-link-colors.svg?branch=master)](https://travis-ci.org/jedmao/postcss-all-link-colors)
 [![npm version](https://badge.fury.io/js/postcss-all-link-colors.svg)](http://badge.fury.io/js/postcss-all-link-colors)
