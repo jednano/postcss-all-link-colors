@@ -1,0 +1,16 @@
+.*
+*.sln*
+*.suo
+coverage/
+scripts/
+src/
+test/
+typings/chai/
+typings/mocha/
+typings/sinon/
+typings/sinon-chai/
+gulpfile.babel.js
+jsconfig.json
+tsconfig.json
+tsd.json
+tslint.json
