@@ -1,5 +1,5 @@
 import gulp from 'gulp';
 
-export default function watch() {
-	gulp.watch('src/**/*.ts', ['scripts--no-clean']);
+export default () => {
+	gulp.watch('src/**/*.ts', ['eslint:no-clean']);
 }

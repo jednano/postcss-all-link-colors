@@ -8,7 +8,7 @@ const typings = [
 	'typings/postcss/.d.ts'
 ];
 
-export default function scripts(done) {
+export default done => {
 	const libResult = gulp.src(
 			typings.concat('src/lib/**/*.ts'),
 			{ base: './src/lib' }
