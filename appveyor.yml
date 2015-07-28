@@ -1,7 +1,8 @@
 # http://www.appveyor.com/docs/appveyor-yml
 
 environment:
-  - nodejs_version: '0.12'
+  matrix:
+    - nodejs_version: 0.12
 
 version: 1.0.{build}
 build: off
