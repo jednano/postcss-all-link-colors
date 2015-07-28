@@ -11,8 +11,9 @@ const pseudoClassesPattern = /^(visited|focus|hover|active)$/;
 export default postcss.plugin('postcss-all-link-colors', () => {
 	return root => {
 		root.eachAtRule('link-colors', atRule => {
-			let [all, color, ...rest] = postcss.list.space(atRule.params);
+			const [all, inputColor, ...rest] = postcss.list.space(atRule.params);
 			const isColorCloned = all === 'all';
+			let color = inputColor;
 
 			if (!isColorCloned) {
 				if (color) {

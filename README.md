@@ -154,3 +154,7 @@ $ ./scripts/watch
 ```
 
 This will build scripts, run tests and watch for changes.
+
+## Similar projects
+
+- [`postcss-link-colors`]

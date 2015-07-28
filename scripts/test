@@ -2,4 +2,5 @@
 
 ./node_modules/.bin/gulp
 ./node_modules/.bin/babel-node node_modules/isparta/bin/isparta cover node_modules/mocha/bin/_mocha
+./node_modules/.bin/eslint gulpfile.babel.js lib test
 ./node_modules/.bin/istanbul check-coverage --statements 100 --functions 100 --branches 100 --lines 100

@@ -132,18 +132,17 @@ describe('@link-colors at-rule', () => {
 				color: d;
 			}`);
     });
-});
-function check(actual, expected) {
-    const processor = postcss().use(plugin);
-    actual = stripTabs(actual);
-    if (expected instanceof RegExp) {
-        expect(() => {
-            processor.process(actual).css;
-        }).to.throw(expected);
-        return;
+    function check(actual, expected) {
+        const processor = postcss().use(plugin);
+        if (expected instanceof RegExp) {
+            expect(() => {
+                return processor.process(stripTabs(actual)).css;
+            }).to.throw(expected);
+            return;
+        }
+        expect(processor.process(stripTabs(actual)).css).to.equal(stripTabs(expected));
     }
-    expect(processor.process(actual).css).to.equal(stripTabs(expected));
-}
-function stripTabs(input) {
-    return input.replace(/\t/g, '');
-}
+    function stripTabs(input) {
+        return input.replace(/\t/g, '');
+    }
+});
