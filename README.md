@@ -157,4 +157,4 @@ This will build scripts, run tests and watch for changes.
 
 ## Similar projects
 
-- [`postcss-link-colors`]
+- [`postcss-link-colors`](https://github.com/steffenmllr/postcss-link-colors)
