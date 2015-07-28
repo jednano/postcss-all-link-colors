@@ -1,16 +1,16 @@
-# postcss-link-colors
+# postcss-all-link-colors
 
 <img align="right" width="135" height="95"
      title="Philosopher’s stone, logo of PostCSS"
      src="http://postcss.github.io/postcss/logo-leftp.png">
 
-[![Build Status](https://travis-ci.org/jedmao/postcss-link-colors.svg?branch=master)](https://travis-ci.org/jedmao/postcss-link-colors)
-[![npm version](https://badge.fury.io/js/postcss-link-colors.svg)](http://badge.fury.io/js/postcss-link-colors)
-[![Code Climate](https://codeclimate.com/github/jedmao/postcss-link-colors/badges/gpa.svg)](https://codeclimate.com/github/jedmao/postcss-link-colors)
-[![Test Coverage](https://codeclimate.com/github/jedmao/postcss-link-colors/badges/coverage.svg)](https://codeclimate.com/github/jedmao/postcss-link-colors)
-[![npm license](http://img.shields.io/npm/l/postcss-link-colors.svg?style=flat-square)](https://www.npmjs.org/package/postcss-link-colors)
+[![Build Status](https://travis-ci.org/jedmao/postcss-all-link-colors.svg?branch=master)](https://travis-ci.org/jedmao/postcss-all-link-colors)
+[![npm version](https://badge.fury.io/js/postcss-all-link-colors.svg)](http://badge.fury.io/js/postcss-all-link-colors)
+[![Code Climate](https://codeclimate.com/github/jedmao/postcss-all-link-colors/badges/gpa.svg)](https://codeclimate.com/github/jedmao/postcss-all-link-colors)
+[![Test Coverage](https://codeclimate.com/github/jedmao/postcss-all-link-colors/badges/coverage.svg)](https://codeclimate.com/github/jedmao/postcss-all-link-colors)
+[![npm license](http://img.shields.io/npm/l/postcss-all-link-colors.svg?style=flat-square)](https://www.npmjs.org/package/postcss-all-link-colors)
 
-[![npm](https://nodei.co/npm/postcss-link-colors.svg?downloads=true)](https://nodei.co/npm/postcss-link-colors/)
+[![npm](https://nodei.co/npm/postcss-all-link-colors.svg?downloads=true)](https://nodei.co/npm/postcss-all-link-colors/)
 
 [PostCSS](https://github.com/postcss/postcss) plugin to insert colors for link-related pseudo-classes.
 
@@ -103,7 +103,7 @@ Link-related pseudo-classes are written in _LVHA-order:_ `:link` — `:visited` 
 ## Installation
 
 ```
-$ npm install postcss-link-colors
+$ npm install postcss-all-link-colors
 ```
 
 ## Usage
@@ -112,7 +112,7 @@ $ npm install postcss-link-colors
 
 ```js
 postcss([
-	require('postcss-link-colors'),
+	require('postcss-all-link-colors'),
 	// more plugins...
 ])
 ```
@@ -121,10 +121,10 @@ postcss([
 
 ```ts
 ///<reference path="node_modules/postcss-font-colors/.d.ts" />
-import postCssLinkColors = require('postcss-link-colors');
+import postcssAllLinkColors = require('postcss-all-link-colors');
 
 postcss([
-	postCssLinkColors,
+	postcssAllLinkColors,
 	// more plugins...
 ])
 ```

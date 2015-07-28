@@ -1,13 +1,13 @@
 {
-  "name": "postcss-link-colors",
+  "name": "postcss-all-link-colors",
   "version": "0.0.1",
-  "description": "PostCSS plugin to insert colors for link-related pseudo-classes.",
+  "description": "PostCSS plugin to insert colors for all link-related pseudo-classes.",
   "scripts": {
     "test": "sh ./scripts/test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jedmao/postcss-link-colors.git"
+    "url": "git+https://github.com/jedmao/postcss-all-link-colors.git"
   },
   "keywords": [
     "postcss",
@@ -19,9 +19,9 @@
   "author": "Jed Mao <jedmao@outlook.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jedmao/postcss-link-colors/issues"
+    "url": "https://github.com/jedmao/postcss-all-link-colors/issues"
   },
-  "homepage": "https://github.com/jedmao/postcss-link-colors#readme",
+  "homepage": "https://github.com/jedmao/postcss-all-link-colors#readme",
   "dependencies": {
     "babel-core": "^5.8.5",
     "postcss": "^4.1.16"
