@@ -145,7 +145,7 @@ $ ./scripts/test
 
 This will build scripts, run tests and generate a code coverage report. Anything less than 100% coverage will throw an error.
 
-## Development
+### Watching
 
 For much faster development cycles, run the following command:
 
