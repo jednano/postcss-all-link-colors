@@ -134,3 +134,23 @@ postcss([
 ## Options
 
 None at this time.
+
+## Testing
+
+Run the following command:
+
+```
+$ ./scripts/test
+```
+
+This will build scripts, run tests and generate a code coverage report. Anything less than 100% coverage will throw an error.
+
+## Development
+
+For much faster development cycles, run the following command:
+
+```
+$ ./scripts/watch
+```
+
+This will build scripts, run tests and watch for changes.
