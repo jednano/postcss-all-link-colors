@@ -9,6 +9,7 @@ typings/chai/
 typings/mocha/
 typings/sinon/
 typings/sinon-chai/
+appveyor.yml
 gulpfile.babel.js
 jsconfig.json
 tsconfig.json

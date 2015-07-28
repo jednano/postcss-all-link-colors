@@ -4,7 +4,7 @@ environment:
   matrix:
     - nodejs_version: 2
 
-version: "{build}"
+version: 1.0.{build}
 build: off
 deploy: off
 
@@ -15,5 +15,21 @@ install:
 test_script:
   - node --version
   - npm --version
-  - ps: "npm test # PowerShell"
-  - cmd: "npm test"
+  - ps: 'npm test # PowerShell'
+  - cmd: 'npm test'
+
+notifications:
+- provider: Email
+  to:
+  - jedmao@outlook.com
+  subject: 'AppVeyor Build Failed: postcss-all-link-colors'
+  on_build_success: false
+  on_build_failure: true
+  on_build_status_changed: false
+- provider: Email
+  to:
+  - jedmao@outlook.com
+  subject: 'AppVeyor Build Status Changed: postcss-all-link-colors'
+  on_build_success: false
+  on_build_failure: false
+  on_build_status_changed: true
