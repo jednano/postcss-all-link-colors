@@ -2,5 +2,7 @@
 .vs/
 coverage/
 lib/
+!src/lib/
 node_modules/
 test/
+!src/test
