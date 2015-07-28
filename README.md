@@ -7,9 +7,10 @@
 [![Travis Build Status](https://img.shields.io/travis/jedmao/postcss-all-link-colors.svg?label=unix%20build)](https://travis-ci.org/jedmao/postcss-all-link-colors)
 [![AppVeyor Build Status](https://img.shields.io/appveyor/ci/jedmao/postcss-all-link-colors.svg?label=windows%20build)](https://ci.appveyor.com/project/jedmao/postcss-all-link-colors)
 [![npm version](https://badge.fury.io/js/postcss-all-link-colors.svg)](http://badge.fury.io/js/postcss-all-link-colors)
+[![npm license](http://img.shields.io/npm/l/postcss-all-link-colors.svg?style=flat-square)](https://www.npmjs.org/package/postcss-all-link-colors)
+
 [![Code Climate](https://codeclimate.com/github/jedmao/postcss-all-link-colors/badges/gpa.svg)](https://codeclimate.com/github/jedmao/postcss-all-link-colors)
 [![Test Coverage](https://codeclimate.com/github/jedmao/postcss-all-link-colors/badges/coverage.svg)](https://codeclimate.com/github/jedmao/postcss-all-link-colors)
-[![npm license](http://img.shields.io/npm/l/postcss-all-link-colors.svg?style=flat-square)](https://www.npmjs.org/package/postcss-all-link-colors)
 
 [![npm](https://nodei.co/npm/postcss-all-link-colors.svg?downloads=true)](https://nodei.co/npm/postcss-all-link-colors/)
 
