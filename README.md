@@ -122,7 +122,7 @@ postcss([
 ### TypeScript
 
 ```ts
-///<reference path="node_modules/postcss-font-colors/.d.ts" />
+///<reference path="node_modules/postcss-all-link-colors/.d.ts" />
 import postcssAllLinkColors = require('postcss-all-link-colors');
 
 postcss([
