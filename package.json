@@ -1,6 +1,6 @@
 {
   "name": "postcss-all-link-colors",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "PostCSS plugin to insert colors for all link-related pseudo-classes.",
   "main": "dist/plugin.js",
   "scripts": {
@@ -29,11 +29,11 @@
   },
   "homepage": "https://github.com/jedmao/postcss-all-link-colors#readme",
   "dependencies": {
-    "babel-core": "^5.8.5",
     "postcss": "^4.1.16"
   },
   "devDependencies": {
     "babel": "^5.8.5",
+    "babel-core": "^5.8.20",
     "babel-eslint": "^4.0.5",
     "chai": "^3.2.0",
     "del": "^1.2.0",
