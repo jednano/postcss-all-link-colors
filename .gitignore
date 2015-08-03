@@ -1,4 +1,7 @@
 *.log
 .vs/
+build/**/*.js
+build/**/*.ts
 coverage/
+dist/
 node_modules/
