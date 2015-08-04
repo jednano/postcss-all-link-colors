@@ -137,7 +137,7 @@ None at this time.
 Run the following command:
 
 ```
-$ ./scripts/test
+$ npm test
 ```
 
 This will build scripts, run tests and generate a code coverage report. Anything less than 100% coverage will throw an error.
@@ -147,7 +147,7 @@ This will build scripts, run tests and generate a code coverage report. Anything
 For much faster development cycles, run the following command:
 
 ```
-$ ./scripts/watch
+$ npm run watch
 ```
 
 This will build scripts, run tests and watch for changes.
