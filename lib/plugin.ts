@@ -1,4 +1,4 @@
-﻿///<reference path="../../typings/postcss/.d.ts" />
+﻿///<reference path="../node_modules/postcss/postcss.d.ts" />
 import postcss from 'postcss';
 
 const errorContext = {
@@ -10,7 +10,7 @@ const pseudoClassesPattern = /^(visited|focus|hover|active)$/;
 // ReSharper disable once UnusedLocals
 export default postcss.plugin('postcss-all-link-colors', () => {
 	return root => {
-		root.eachAtRule('link-colors', atRule => {
+		root.walkAtRules('link-colors', atRule => {
 			const [all, inputColor, ...rest] = postcss.list.space(atRule.params);
 			const isColorCloned = all === 'all';
 			let color = inputColor;
@@ -38,23 +38,23 @@ export default postcss.plugin('postcss-all-link-colors', () => {
 			const overrides = {};
 			let declarationCount = 0;
 			let isFocusBeforeHover = true;
-			atRule.eachDecl(pseudoClassesPattern, decl => {
+			atRule.walkDecls(pseudoClassesPattern, decl => {
 				declarationCount++;
 				if (/^(focus|hover)$/.test(decl.prop)) {
 					isFocusBeforeHover = decl.prop === 'hover';
 				}
 				const rule = postcss.rule({
-					selector: atRule.parent.selectors.map(selector => {
+					selector: (<postcss.Rule>atRule.parent).selectors.map(selector => {
 						return `${selector}:${decl.prop}`;
 					}).join(', '),
-					semicolon: atRule.semicolon
+					semicolon: atRule.raws.semicolon
 				});
 				decl.moveTo(rule);
 				overrides[decl.prop] = rule;
 				decl.prop = 'color';
 			});
 
-			atRule.eachDecl(decl => {
+			atRule.walkDecls(decl => {
 				throw decl.error(`Unsupported property: ${decl.prop}`, errorContext);
 			});
 
@@ -78,16 +78,16 @@ export default postcss.plugin('postcss-all-link-colors', () => {
 					return;
 				}
 				const rule = postcss.rule({
-					selector: atRule.parent.selectors.map(selector => {
+					selector: (<postcss.Rule>atRule.parent).selectors.map(selector => {
 						return `${selector}:${pseudoClass}`;
 					}).join(', '),
-					semicolon: atRule.semicolon
+					semicolon: atRule.raws.semicolon
 				});
 				colorDecl.cloneAfter().moveTo(rule);
 				rule.moveAfter(atRule.parent);
 			});
 
-			atRule.removeSelf();
+			atRule.remove();
 		});
 	};
 });
