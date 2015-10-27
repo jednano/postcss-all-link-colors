@@ -1,3 +1,6 @@
+## 1.0.1
+- Fix/remove deprecation warning.
+
 ## 1.0.0
 - Supports PostCSS 5.x.
 

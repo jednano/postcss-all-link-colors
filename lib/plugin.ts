@@ -46,9 +46,9 @@ export default postcss.plugin('postcss-all-link-colors', () => {
 				const rule = postcss.rule({
 					selector: (<postcss.Rule>atRule.parent).selectors.map(selector => {
 						return `${selector}:${decl.prop}`;
-					}).join(', '),
-					semicolon: atRule.raws.semicolon
+					}).join(', ')
 				});
+				rule.raws.semicolon = atRule.raws.semicolon;
 				decl.moveTo(rule);
 				overrides[decl.prop] = rule;
 				decl.prop = 'color';
@@ -80,9 +80,9 @@ export default postcss.plugin('postcss-all-link-colors', () => {
 				const rule = postcss.rule({
 					selector: (<postcss.Rule>atRule.parent).selectors.map(selector => {
 						return `${selector}:${pseudoClass}`;
-					}).join(', '),
-					semicolon: atRule.raws.semicolon
+					}).join(', ')
 				});
+				rule.raws.semicolon = atRule.raws.semicolon;
 				colorDecl.cloneAfter().moveTo(rule);
 				rule.moveAfter(atRule.parent);
 			});

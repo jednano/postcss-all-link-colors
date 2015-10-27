@@ -1,6 +1,6 @@
 {
   "name": "postcss-all-link-colors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "PostCSS plugin to insert colors for all link-related pseudo-classes.",
   "main": "dist/lib/plugin.js",
   "scripts": {
