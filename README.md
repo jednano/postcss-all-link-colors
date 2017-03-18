@@ -9,7 +9,6 @@
 [![Travis Build Status](https://img.shields.io/travis/jedmao/postcss-all-link-colors.svg)](https://travis-ci.org/jedmao/postcss-all-link-colors)
 [![codecov](https://codecov.io/gh/jedmao/postcss-all-link-colors/branch/master/graph/badge.svg)](https://codecov.io/gh/jedmao/postcss-all-link-colors)
 [![Dependency Status](https://gemnasium.com/badges/github.com/jedmao/postcss-all-link-colors.svg)](https://gemnasium.com/github.com/jedmao/postcss-all-link-colors)
-[![CircleCI](https://circleci.com/gh/jedmao/postcss-all-link-colors.svg?style=svg)](https://circleci.com/gh/jedmao/postcss-all-link-colors)
 
 [![npm](https://nodei.co/npm/postcss-all-link-colors.svg?downloads=true)](https://nodei.co/npm/postcss-all-link-colors/)
 
