@@ -6,8 +6,10 @@
 
 [![NPM version](http://img.shields.io/npm/v/postcss-all-link-colors.svg?style=flat)](https://www.npmjs.org/package/postcss-all-link-colors)
 [![npm license](http://img.shields.io/npm/l/postcss-all-link-colors.svg?style=flat-square)](https://www.npmjs.org/package/postcss-all-link-colors)
-[![Travis Build Status](https://img.shields.io/travis/jedmao/postcss-all-link-colors.svg?label=unix)](https://travis-ci.org/jedmao/postcss-all-link-colors)
-[![AppVeyor Build Status](https://img.shields.io/appveyor/ci/jedmao/postcss-all-link-colors.svg?label=windows)](https://ci.appveyor.com/project/jedmao/postcss-all-link-colors)
+[![Travis Build Status](https://img.shields.io/travis/jedmao/postcss-all-link-colors.svg)](https://travis-ci.org/jedmao/postcss-all-link-colors)
+[![codecov](https://codecov.io/gh/jedmao/postcss-all-link-colors/branch/master/graph/badge.svg)](https://codecov.io/gh/jedmao/postcss-all-link-colors)
+[![Dependency Status](https://gemnasium.com/badges/github.com/jedmao/postcss-all-link-colors.svg)](https://gemnasium.com/github.com/jedmao/postcss-all-link-colors)
+[![CircleCI](https://circleci.com/gh/jedmao/postcss-all-link-colors.svg?style=svg)](https://circleci.com/gh/jedmao/postcss-all-link-colors)
 
 [![npm](https://nodei.co/npm/postcss-all-link-colors.svg?downloads=true)](https://nodei.co/npm/postcss-all-link-colors/)
 
@@ -110,22 +112,15 @@ $ npm install postcss-all-link-colors
 ### JavaScript
 
 ```js
-postcss([
-	require('postcss-all-link-colors'),
-	// more plugins...
-])
+postcss([ require('postcss-all-link-colors') ]);
 ```
 
 ### TypeScript
 
 ```ts
-///<reference path="node_modules/postcss-all-link-colors/.d.ts" />
-import postcssAllLinkColors = require('postcss-all-link-colors');
+import * as postcssAllLinkColors from 'postcss-all-link-colors';
 
-postcss([
-	postcssAllLinkColors,
-	// more plugins...
-])
+postcss([ postcssAllLinkColors ]);
 ```
 
 ## Options
