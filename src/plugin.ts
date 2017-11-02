@@ -34,7 +34,9 @@ const PostCssAllLinkColors = postcss.plugin('postcss-all-link-colors', () => {
 			const colorDecl = postcss.decl({
 				prop: 'color',
 				value: color
-			}).moveBefore(atRule);
+			});
+
+			atRule.before(colorDecl);
 
 			const overrides: { [key: string]: postcss.Rule; } = {};
 			let declarationCount = 0;
@@ -52,7 +54,7 @@ const PostCssAllLinkColors = postcss.plugin('postcss-all-link-colors', () => {
 						.join(', ')
 				});
 				rule.raws.semicolon = atRule.raws.semicolon;
-				decl.moveTo(rule);
+				rule.append(decl);
 				overrides[decl.prop] = rule;
 				decl.prop = 'color';
 			});
@@ -80,7 +82,7 @@ const PostCssAllLinkColors = postcss.plugin('postcss-all-link-colors', () => {
 			pseudoClasses.forEach(pseudoClass => {
 				const override = overrides[pseudoClass];
 				if (override) {
-					override.moveAfter(atRule.parent);
+					atRule.parent.after(override);
 					return;
 				}
 				if (!isColorCloned) {
@@ -94,8 +96,8 @@ const PostCssAllLinkColors = postcss.plugin('postcss-all-link-colors', () => {
 						.join(', ')
 				});
 				rule.raws.semicolon = atRule.raws.semicolon;
-				colorDecl.cloneAfter().moveTo(rule);
-				rule.moveAfter(atRule.parent);
+				rule.append(colorDecl.cloneAfter());
+				atRule.parent.after(rule);
 			});
 
 			atRule.remove();

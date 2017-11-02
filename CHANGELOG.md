@@ -1,3 +1,6 @@
+## 2.0.0
+- **Breaking:** Upgrade to PostCSS 6 (no longer works with PostCSS 5).
+
 ## 1.0.1
 - Fix/remove deprecation warning.
 

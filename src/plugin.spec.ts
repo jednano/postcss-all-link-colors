@@ -1,4 +1,4 @@
-﻿import test, { ContextualTestContext } from 'ava';
+﻿import test, { TestContext } from 'ava';
 import * as postcss from 'postcss';
 
 import * as plugin from './plugin';
@@ -157,7 +157,7 @@ test('appends a pseudo-class with multiple selectors', macro,
 );
 
 function macro(
-	t: ContextualTestContext,
+	t: TestContext,
 	input: string,
 	expectedOutput?: string | RegExp
 ) {
